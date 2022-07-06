@@ -14,13 +14,13 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// app.use('/api', productRouter);
-// app.use('/api',categoryRouter);
-// app.use('/api',authRouter);
-// app.use('/api',userRouter);
-// app.use('/api',contactRouter);
-// app.use('/api',order);
-// app.use("/api",orderDetails);
+app.use('/api', productRouter);
+app.use('/api',categoryRouter);
+app.use('/api',authRouter);
+app.use('/api',userRouter);
+app.use('/api',contactRouter);
+app.use('/api',order);
+app.use("/api",orderDetails);
 
 const PORT = 3002;
 
